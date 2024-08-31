@@ -74,14 +74,13 @@ final TextEditingController textcontroller = TextEditingController();
                         value: task['isCompleted'],
                       activeColor: task['isCompleted']
                           ? Colors.green
-                          : Colors.blue,
+                          : Colors.blue, 
                         onChanged: (_)=>controller.toggleTaskCompletion(index),
 
                     ),
                     title: Text(task['title'],style: const TextStyle(
-                      color: Colors.black,
-                    ),
-                    ),
+                      color: Colors.black
+                    ),),
                    trailing:  IconButton(
                      icon:const Icon(Icons.delete),
                      onPressed: ()=> controller.deleteCompletedTasks(),
